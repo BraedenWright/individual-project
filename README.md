@@ -1,6 +1,6 @@
 # Project Goal
 ------------
-I want to analyze the U.S. Department of Labor statistics data for the U.S. labor force.  Looking at the data, I ultimately want to try and predict future employment/ unemployment rate based on previous years data.  With the data being sorted within a timeframe, it will be an excellent opportunity to continue honing my time series analysis skills.
+Analyze the U.S. Department of Labor statistics data for the U.S. labor force. Looking at the data, I want to try and predict future employment/ unemployment rate based on previous years data, if possible with the data available. Barring that, analyzing the data may also give insight into what populations have been affected the most when economic With the data being sorted within a timeframe, it will be an excellent opportunity to continue honing my time series analysis skills.
 
 If any other notable trends appear they will certainly be investigated, and suggestions on how to better the dataframe or what other features would be helpful for analysis.
 
