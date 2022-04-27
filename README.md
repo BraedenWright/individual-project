@@ -8,6 +8,8 @@ If any other notable trends appear they will certainly be investigated, and sugg
 
 Initial Questions
 -----------------
+* Is there a noticable trend or seasonality present in the data?
+
 * Has unemployment rate increased for one population over another?
 
 * What gender improved their employment rate the most?
@@ -34,7 +36,7 @@ Planning:
 * Set datetime index
 
 
-***Exploration ***
+***Exploration***
 
 * Ask and answer questions about the labor data.
 * Visually represent findings with charts. 
@@ -73,7 +75,7 @@ Run the final_report.ipynb notebook
 ***
 
 # Key Findings
-* 
+* Signs of Seasonality 
 * 
 * 
 * 
