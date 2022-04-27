@@ -37,10 +37,9 @@ def wrangle_labor():
                           'Data.Not In Labor Force.White':'white_not_in_labor_force', 
                           'Data.Civilian Labor Force.Asian.Counts':'asian_american_civilian_labor_force', 
                           'Data.Civilian Labor Force.Asian.Participation Rate':'asian_american_clf_rate',
-                          'Data.Employed.Asian.Counts':'asian_american_employed', 
-                          'Data.Employed.Asian.Unemployment Rate':'employed_asian_american_unemployment_rate', 
+                          'Data.Employed.Asian.Counts':'asian_american_employed',  
                           'Data.Unemployed.Asian.Counts':'asian_american_unemployed',
-                          'Data.Unemployed.Asian.Unemployment Rate':'unemployed_asian_american_unemployment_rate', 
+                          'Data.Unemployed.Asian.Unemployment Rate':'asian_american_unemployment_rate', 
                           'Data.Civilian Labor Force.Black or African American.Counts.All':'all_african_american_civilian_labor_force',
                           'Data.Civilian Labor Force.Black or African American.Counts.Men':'male_african_american_civilian_labor_force',
                           'Data.Civilian Labor Force.Black or African American.Counts.Women':'female_african_american_civilian_labor_force',
@@ -95,7 +94,12 @@ def wrangle_labor():
 
     df['avg_male_unemployment_rate'] = round(((df['male_african_american_unemployment_rate'] + df['male_white_unemployment_rate']) / 2), 2)
 
-    df['avg_total_unemployment_rate'] = round(((df['unemployed_asian_american_unemployment_rate'] + df['all_african_american_unemployment_rate'] + df['all_white_unemployment_rate']) / 3), 2)
+    df['avg_total_unemployment_rate'] = round(((df['asian_american_unemployment_rate'] + df['all_african_american_unemployment_rate'] + df['all_white_unemployment_rate']) / 3), 2)
+
+    df['unemployment_bin'] = pd.qcut(df.avg_total_unemployment_rate, 4, labels=['low', 'avg', 'high', 'very high'])
+
+    # drop one redundant column
+    df.drop(columns='Data.Employed.Asian.Unemployment Rate')
 
     # concat year and month
     df['date'] = df['month'].astype(str).str.cat(df['year'].astype(str), sep=', ')
