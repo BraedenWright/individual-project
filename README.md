@@ -14,7 +14,7 @@ Initial Questions
 
 * What demographic (race, gender) has decreased the most in employment rate?
 
-
+* Do we see an even distribution of employment between different dempographic over time?
 
 # Project Planning
 Plan -> Acquire -> Prepare -> Explore -> Deliver
@@ -38,6 +38,10 @@ Planning:
 
 * Ask and answer questions about the labor data.
 * Visually represent findings with charts. 
+
+***Modeling***
+
+* Build a ML Model to predict possible future trends
 
 ***Deliver***
 
