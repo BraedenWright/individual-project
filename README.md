@@ -58,65 +58,125 @@ Planning:
 Feature -----> Discription
 
 date -----> Feature engineered datetime index for dataframe 
+
 month_num -----> Numerical representation of Month
+
 month -----> String representation of Month
+
 year -----> Year data was represents
+
 asian_american_cnp -----> Civilian Noninstitutional Population.Asian American
+
 african_american_cnp -----> Civilian Noninstitutional Population.African American
+
 white_cnp -----> Civilian Noninstitutional Population.White
+
 asian_american_not_in_labor_force -----> Count of Asian American population that is not engaged in the civilian labor force
+
 african_american_not_in_labor_force -----> Count of African American  population that is not engaged in the civilian labor force
+
 white_not_in_labor_force -----> Count of white population that is not engaged in the civilian labor force
+
 asian_american_civilian_labor_force -----> Count of Asian American population that IS engaged in the civilian labor force
+
 asian_american_clf_rate -----> Rate of Asian American population that IS engaged in the civilian labor force
+
 asian_american_employed -----> Count of Asian American population that is employed at the time
+
 asian_american_unemployed -----> Count of Asian American population that is unemployed at the time
+
 asian_american_unemployment_rate -----> Unemployment Rate of the Asian American population
+
 all_african_american_civilian_labor_force -----> Count of African American population that IS engaged in the civilian labor force
+
 male_african_american_civilian_labor_force -----> Count of African American, male population that IS engaged in the civilian labor force
+
 female_african_american_civilian_labor_force -----> Count of African American, female population that IS engaged in the civilian labor force
+
 all_african_american_clf_rate -----> Rate of African American population that IS engaged in the civilian labor force
+
 male_african_american_clf_rate -----> Rate of African American, male population that IS engaged in the civilian labor force
+
 female_african_american_clf_rate -----> Rate of African American, female population that IS engaged in the civilian labor force
+
 all_white_civilian_labor_force ----->Count of white population that IS engaged in the civilian labor force
+
 male_white_civilian_labor_force ----->Count of white, male population that IS engaged in the civilian labor force
+
 female_white_civilian_labor_force ----->Count of white, female population that IS engaged in the civilian labor force
+
 all_white_clf_rate -----> Rate of white population that IS engaged in the civilian labor force
+
 male_white_clf_rate -----> Rate of white, male population that IS engaged in the civilian labor force
+
 female_white_clf_rate -----> Rate of white, female population that IS engaged in the civilian labor force
+
 all_african_american_employed ----->Count of African American population that is employed at the time
+
 male_african_american_employed -----> Count of African American, male population that is employed at the time
+
 female_african_american_employed -----> Count of African American, female population that is employed at the time
+
 all_african_american_employment_ratio -----> Employment Rate of the African American population
+
 male_african_american_employment_ratio -----> Employment Rate of the African American, male population
+
 female_african_american_employment_ratio -----> Employment Rate of the African American, female population
+
 all_white_employed -----> Employment Rate of the White population
+
 male_white_employed -----> Employment Rate of the White, Male population
+
 female_white_employed -----> Employment Rate of the White, Female population 
+
 employed_all_white_employment_ratio -----> Employment Rate of the White population
+
 employed_male_white_employment_ratio -----> Employment Rate of the White, Male population
+
 employed_female_white_employment_ratio -----> Employment Rate of the White, Female population
+
 all_african_american_unemployed -----> Count of African American population that is unemployed at the time
+
 male_african_american_unemployed -----> Count of African American, Male population that is unemployed at the time
+
 female_african_american_unemployed -----> Count of African American, Female population that is unemployed at the time
+
 all_african_american_unemployment_rate -----> Unemployment Rate of the African American population
+
 male_african_american_unemployment_rate -----> Unemployment Rate of the African American, Male population
+
 female_african_american_unemployment_rate -----> Unemployment Rate of the African American, Female population
+
 all_white_unemployed -----> Count of White population that is unemployed at the time
+
 male_white_unemployed -----> Count of White, Male population that is unemployed at the time
+
 female_white_unemployed -----> Count of White, Female population that is unemployed at the time 
+
 all_white_unemployment_rate -----> Unemployment Rate of the White population
+
 male_white_unemployment_rate -----> Unemployment Rate of the White, Male population
+
 female_white_unemployment_rate -----> Unemployment Rate of the White, Female population
+
 total_civ_non_population -----> [Feature Engineered]  ['asian_american_cnp'] + ['african_american_cnp'] + ['white_cnp']
+
 total_not_in_labor_force -----> [Feature Engineered]  ['asian_american_not_in_labor_force'] + ['african_american_not_in_labor_force'] + ['white_not_in_labor_force']
+
 avg_clf_rate ----->  [Feature Engineered]  ['asian_american_clf_rate'] + ['all_african_american_clf_rate'] + ['all_white_clf_rate']
+
 total_unemployed_pop -----> [Feature Engineered]  ['asian_american_unemployed'] + ['all_african_american_unemployed'] + ['all_white_unemployed']
+
 avg_female_clf_rate -----> [Feature Engineered]  ['female_african_american_clf_rate'] + ['female_white_clf_rate']
+
 avg_male_clf_rate -----> [Feature Engineered]  ['male_african_american_clf_rate'] + ['male_white_clf_rate']
+
 avg_female_unemployment_rate -----> [Feature Engineered]  ['female_african_american_unemployment_rate'] + ['female_white_unemployment_rate']
+
 avg_male_unemployment_rate -----> [Feature Engineered]  ['male_african_american_unemployment_rate'] + ['male_white_unemployment_rate']
+
 avg_total_unemployment_rate -----> [Feature Engineered]  ['asian_american_unemployment_rate'] + ['all_african_american_unemployment_rate'] + ['all_white_unemployment_rate']
+
 unemployment_bin -----> [Feature Engineered] Categorizes Avg Unemployment Rate by 'low', 'avg', 'high', or 'very high'
 
 
