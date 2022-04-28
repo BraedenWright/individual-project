@@ -43,7 +43,7 @@ Planning:
 
 ***Modeling***
 
-* Build a ML Model to predict possible future trends
+* Build a ML Model to predict possible future trends(if possible)
 
 ***Deliver***
 
@@ -195,10 +195,14 @@ Run the Final_Labor_Report.ipynb notebook
 ***
 
 # Key Findings
-* Signs of Seasonality for Unemployment roughly every decade
-* African American Unemployment Rates are generally double that of other populations, regardless of gender. This same population will also decrease their Unemployment at a much faster pace
-* 
-* 
+
+* There is a possible seasonality about a decade in length that can predict high jumps in the unemployment rate of every demographic.
+
+* African American Unemployment Rates are generally double that of other populations, regardless of gender. This same population will also decrease their Unemployment at a much faster pace.
+
+* The White Labor Force grows at a slower rate, however due to containing the majority of the total population their Labor Force actual grew 4x more than other demographics
+
+* Jumps in the Unemployment Rate seems to affect each demographic and gender, however it seems that African American Females tend to retain a lower unemployment rate vs. their Male counterpart (this was not the case for white females)
 
 
 # Recommendation
